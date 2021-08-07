@@ -6,6 +6,8 @@ on:
 
 jobs:
  build:
+    if: "contains(github.event.head_commit.message, 'Release')"
+    build:
     name: Build
     strategy:
       fail-fast: false
@@ -14,7 +16,6 @@ jobs:
         os: [ ubuntu-latest, macos-latest, windows-latest ]
 
     runs-on: ${{ matrix.os }}
-    if: "contains(github.event.head_commit.message, 'Release')"
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v2
@@ -45,7 +46,7 @@ jobs:
       #- name: Publish To NPM
        # env:
         #  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
+        #run: npm publish --access public
 
       - uses: flood-io/is-published-on-npm@v1
         id: is-published
