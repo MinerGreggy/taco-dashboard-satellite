@@ -43,9 +43,9 @@ jobs:
           node-version: 12.x
           registry-url: 'https://registry.npmjs.org'
       #- name: Publish To NPM
-        #env:
-         # NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        #run: npm publish --access public
+       # env:
+        #  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public
 
       - uses: flood-io/is-published-on-npm@v1
         id: is-published
@@ -60,12 +60,6 @@ jobs:
           draft: false
           prerelease: false
 
-      #- name: Get Tag For Release
-      #  uses: oprypin/find-latest-tag@v1
-      #  with:
-      #   repository:  MinerGreggy/hddcoin-dashboard-satellite
-      #   releases-only: true
-      #  id: tag 
       - run: echo "Dashboard is at version ${{ steps.is-published.outputs.version }}"
 
       - name: Download Files For Adding To The Release Assets
@@ -79,3 +73,7 @@ jobs:
           files: 'release-archive-*/*.zip'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           release-tag: ${{ steps.is-published.outputs.version }}
+
+
+
+
