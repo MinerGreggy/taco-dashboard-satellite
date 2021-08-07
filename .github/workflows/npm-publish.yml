@@ -2,9 +2,7 @@
 name: Release-Build-Publish
 
 on:
-  push:
-    branch:
-      - master
+  push
 
 jobs:
  build:
