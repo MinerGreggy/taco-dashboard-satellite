@@ -16,7 +16,7 @@ const version = require('./lib/version');
   logger.log({ level: 'info', msg: `Using ${config.chiaDashboardCoreUrl} for stats submissions` });
   chiaDashboardUpdater.init();
   await statsCollection.init();
-  logger.log({ level: 'info', msg: `Flora-Dashboard-Satellite ${version} initialized` });
+  logger.log({ level: 'info', msg: `Taco-Dashboard-Satellite ${version} initialized` });
 
   process.on('SIGINT', async () => {
     await statsCollection.closeDaemonConnection();
