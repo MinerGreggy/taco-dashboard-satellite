@@ -200,6 +200,14 @@ chalk@^4.1.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+chia-api@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/chia-api/-/chia-api-2.1.0.tgz#6a683b46adb9a1b1c934c90890384067911a7123"
+  integrity sha512-yfYlWEVcW+JiKjbJWVaNTh1LjTWPZwH9i2bxQI6ajAJy0ZV0ZBewFDtTHhkJNOt0MADTvNY559z/SGjcUFcsWw==
+  dependencies:
+    json-bigint "^1.0.0"
+    ws "^7.5.0"
+
 chownr@^1.1.1:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
@@ -398,9 +406,9 @@ fill-range@^7.0.1:
     to-regex-range "^5.0.1"
 
 follow-redirects@^1.10.0:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
-  integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.2.tgz#cecb825047c00f5e66b142f90fed4f515dec789b"
+  integrity sha512-yLR6WaE2lbF0x4K2qE2p9PEXKLDjUjnR/xmjS3wHAYxtlsI9MLLBJUZirAHKzUZDGLxje7w/cXR49WOUo4rbsA==
 
 from2@^2.3.0:
   version "2.3.0"
@@ -557,9 +565,9 @@ into-stream@^6.0.0:
     p-is-promise "^3.0.0"
 
 is-core-module@^2.2.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.5.0.tgz#f754843617c70bfd29b7bd87327400cda5c18491"
-  integrity sha512-TXCMSDsEHMEEZ6eCA8rwRDbLu55MRGmrctljsBX/2v1d9/GzqHOxW5c5oPSgrUt2vBFXebu9rGqckXGPWOlYpg==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.6.0.tgz#d7553b2526fe59b92ba3e40c8df757ec8a709e19"
+  integrity sha512-wShG8vs60jKfPWpF2KZRaAtvt3a20OAn7+IJ6hLPECpSABLcKtFKTTI4ZtH5QcBruBHlq+WsdHWyz0BCZW7svQ==
   dependencies:
     has "^1.0.3"
 
@@ -1131,14 +1139,6 @@ supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
-
-taco-api@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.yarnpkg.com/taco-api/-/taco-api-2.2.5.tgz#2012f464cbb0979e7f2e914b45294e53c34d9510"
-  integrity sha512-s16e/WcJo+Tr4BJU8fj8DjdotZjSmMuhaws3TDJeIGFnfNzKe7aOvgXPGT3G+aM1slWJ4hcQhssYM5EKv3GMRQ==
-  dependencies:
-    json-bigint "^1.0.0"
-    ws "^7.5.0"
 
 tar-fs@^2.0.0:
   version "2.1.1"
