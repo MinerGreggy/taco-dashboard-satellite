@@ -201,9 +201,9 @@ chalk@^4.1.0:
     supports-color "^7.1.0"
 
 chia-api@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/chia-api/-/chia-api-2.1.0.tgz#6a683b46adb9a1b1c934c90890384067911a7123"
-  integrity sha512-yfYlWEVcW+JiKjbJWVaNTh1LjTWPZwH9i2bxQI6ajAJy0ZV0ZBewFDtTHhkJNOt0MADTvNY559z/SGjcUFcsWw==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/chia-api/-/chia-api-2.2.0.tgz#bfa679edb12408ccc4aa8f7edecf0521e117f65a"
+  integrity sha512-rSNSOtcetye47C0qsNiDwGQCBKimOFpQFlyFGeLYAfUhoiezx6OJsU6Pb5+5iLDpJnaQIBhZ89uxx/sTqy3NHg==
   dependencies:
     json-bigint "^1.0.0"
     ws "^7.5.0"
@@ -392,9 +392,9 @@ fast-levenshtein@~2.0.6:
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
 fastq@^1.6.0:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.11.1.tgz#5d8175aae17db61947f8b162cfc7f63264d22807"
-  integrity sha512-HOnr8Mc60eNYl1gzwp6r5RoUyAn5/glBolUzP/Ez6IFVPMPirxn/9phgL6zhOtaTy7ISwPvQ+wT+hfcRZh/bzw==
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/fastq/-/fastq-1.12.0.tgz#ed7b6ab5d62393fb2cc591c853652a5c318bf794"
+  integrity sha512-VNX0QkHK3RsXVKr9KrlUv/FoTa0NdbYoHHl7uXHv2rzyHSlxjdNAKug2twd9luJxpcyNeAgf5iPPMutJO67Dfg==
   dependencies:
     reusify "^1.0.4"
 
