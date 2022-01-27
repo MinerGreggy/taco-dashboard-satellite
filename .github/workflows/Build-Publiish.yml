@@ -1,9 +1,8 @@
 name: Release-Build-Publish
 
 on:
-  push:
-    tags:
-      - '*'
+  push
+  
 jobs:
  build:
     name: Build
