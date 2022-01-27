@@ -2,7 +2,22 @@ name: Release-Build-Publish
 
 on:
   push
+
 jobs:
+ 
+ test:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Extract tag name
+        id: tag
+        uses: actions/github-script@0.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            return context.payload.ref.replace(/\/refs\/tags\//, '');
+      - name: Echo
+        run: echo ${{ steps.tag.outputs.result }}
+        
  build:
     name: Build
     strategy:
@@ -11,7 +26,7 @@ jobs:
         node-version: [ 16.x ]
         os: [ ubuntu-latest, macos-latest, windows-latest ]
   
-  
+
     runs-on: ${{ matrix.os }}
     if: "contains(github.event.head_commit.message, 'NewRelease')"
     steps:
