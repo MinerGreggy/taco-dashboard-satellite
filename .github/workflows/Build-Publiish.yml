@@ -3,7 +3,6 @@ name: Release-Build-Publish
 on:
   push
 
-  
 jobs:
  build:
     name: Build
