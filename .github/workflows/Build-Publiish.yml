@@ -1,5 +1,4 @@
 name: Release-Build-Publish
-
 on:
   push
 
