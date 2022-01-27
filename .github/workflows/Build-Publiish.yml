@@ -1,7 +1,11 @@
 name: Release-Build-Publish
 
 on:
-  push
+  push:
+    branches:
+     - master
+    tags:
+      - '**'
 
 jobs:
  build:
