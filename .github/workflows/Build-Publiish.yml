@@ -1,8 +1,7 @@
 name: Release-Build-Publish
 
 on:
-  create:
-     tags:
+  push
 
 jobs:
  test:
@@ -23,6 +22,7 @@ jobs:
           SOURCE_NAME: ${{ steps.branch_name.outputs.SOURCE_NAME }}
           SOURCE_BRANCH: ${{ steps.branch_name.outputs.SOURCE_BRANCH }}
           SOURCE_TAG: ${{ steps.branch_name.outputs.SOURCE_TAG }}
+          
 
  build:
     name: Build
